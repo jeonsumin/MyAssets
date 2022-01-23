@@ -20,6 +20,7 @@
 		DE6EAF712798E62C00E65C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6EAF702798E62C00E65C6C /* Assets.xcassets */; };
 		DE6EAF742798E62C00E65C6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6EAF732798E62C00E65C6C /* Preview Assets.xcassets */; };
 		DE6EAF7B2798E85800E65C6C /* NavigationBarWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6EAF7A2798E85800E65C6C /* NavigationBarWithButton.swift */; };
+		DEC3AE61279E1ECC00FD08CC /* AssetBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE60279E1ECC00FD08CC /* AssetBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DE6EAF702798E62C00E65C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6EAF732798E62C00E65C6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE6EAF7A2798E85800E65C6C /* NavigationBarWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithButton.swift; sourceTree = "<group>"; };
+		DEC3AE60279E1ECC00FD08CC /* AssetBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				DE44F8B0279A90B4002F057C /* AssetMenuButtonStyle.swift */,
 				DE44F8B2279A9304002F057C /* AssetMenuGridView.swift */,
 				DE44F8B4279A9407002F057C /* AssetView.swift */,
+				DEC3AE60279E1ECC00FD08CC /* AssetBannerView.swift */,
 				DE6EAF7A2798E85800E65C6C /* NavigationBarWithButton.swift */,
 				DE6EAF6C2798E62B00E65C6C /* MyAssetsApp.swift */,
 				DE6EAF6E2798E62B00E65C6C /* ContentView.swift */,
@@ -173,6 +176,7 @@
 				DE6EAF6F2798E62B00E65C6C /* ContentView.swift in Sources */,
 				DE6EAF6D2798E62B00E65C6C /* MyAssetsApp.swift in Sources */,
 				DE44F8AF279A8F04002F057C /* AssetMenu.swift in Sources */,
+				DEC3AE61279E1ECC00FD08CC /* AssetBannerView.swift in Sources */,
 				DE44F8B9279A9599002F057C /* BannerCard.swift in Sources */,
 				DE44F8B1279A90B4002F057C /* AssetMenuButtonStyle.swift in Sources */,
 			);

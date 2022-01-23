@@ -40,6 +40,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             controllers = parent.pages.map { UIHostingController(rootView: $0) }
         }
 
+        //pagenation loop
         func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
             guard let index = controllers.firstIndex(of: viewController) else { return nil }
             if index == 0 {
@@ -47,7 +48,8 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             }
             return controllers[index - 1]
         }
-
+        
+        //pagenation loop
         func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
             guard let index = controllers.firstIndex(of: viewController) else { return nil }
             if index + 1 == controllers.count {
