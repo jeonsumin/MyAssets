@@ -10,12 +10,12 @@ import SwiftUI
 struct AssetSectionView: View {
     @ObservedObject var assetSection: Asset
     var body: some View {
-        VStack(spacing: 20){
+        VStack(spacing: 10){
             AssetSectionHeaderView(title: assetSection.type.title)
             ForEach(assetSection.data) { data in
                 HStack{
                     Text(data.title)
-                        .font(.title)
+                        .font(.title3)
                         .foregroundColor(.secondary)
                     Spacer()
                     Text(data.amount)

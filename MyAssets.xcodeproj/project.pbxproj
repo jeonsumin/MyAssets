@@ -29,6 +29,7 @@
 		DEC3AE6C279E251C00FD08CC /* AssetSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE6B279E251C00FD08CC /* AssetSectionHeaderView.swift */; };
 		DEC3AE6E279E25B600FD08CC /* AssetSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE6D279E25B600FD08CC /* AssetSectionView.swift */; };
 		DEC3AE70279E274700FD08CC /* AssetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE6F279E274700FD08CC /* AssetSummaryView.swift */; };
+		DEDF4C33279FAD8500A331CE /* BankAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF4C32279FAD8500A331CE /* BankAccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		DEC3AE6B279E251C00FD08CC /* AssetSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionHeaderView.swift; sourceTree = "<group>"; };
 		DEC3AE6D279E25B600FD08CC /* AssetSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionView.swift; sourceTree = "<group>"; };
 		DEC3AE6F279E274700FD08CC /* AssetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSummaryView.swift; sourceTree = "<group>"; };
+		DEDF4C32279FAD8500A331CE /* BankAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				DEC3AE66279E22B500FD08CC /* Entities */,
 				DE52FA97279E29F900C1A833 /* AssetMenu */,
 				DE52FA96279E299B00C1A833 /* AssetSummaryView */,
+				DEDF4C32279FAD8500A331CE /* BankAccountView.swift */,
 				DE44F8B4279A9407002F057C /* AssetView.swift */,
 				DEC3AE60279E1ECC00FD08CC /* AssetBannerView.swift */,
 				DE6EAF7A2798E85800E65C6C /* NavigationBarWithButton.swift */,
@@ -224,6 +227,7 @@
 				DEC3AE6A279E23CA00FD08CC /* AssetSummaryData.swift in Sources */,
 				DEC3AE6C279E251C00FD08CC /* AssetSectionHeaderView.swift in Sources */,
 				DEC3AE70279E274700FD08CC /* AssetSummaryView.swift in Sources */,
+				DEDF4C33279FAD8500A331CE /* BankAccountView.swift in Sources */,
 				DE44F8BB279A9672002F057C /* PageViewController.swift in Sources */,
 				DE6EAF7B2798E85800E65C6C /* NavigationBarWithButton.swift in Sources */,
 				DE44F8B7279A9555002F057C /* AssetBanner.swift in Sources */,

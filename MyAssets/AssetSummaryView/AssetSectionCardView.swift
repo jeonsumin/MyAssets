@@ -28,11 +28,11 @@ struct AssetSectionCardView: View {
                         ForEach(assetData) { data in
                             HStack {
                                 Text(data.title)
-                                    .font(.title)
+                                    .font(.title2)
                                     .foregroundColor(.secondary)
                                 Spacer()
                                 Text(data.creditCardAmounts![i].amount)
-                                    .font(.title2)
+                                    .font(.title3)
                                     .foregroundColor(.primary)
                             }
                             Divider()

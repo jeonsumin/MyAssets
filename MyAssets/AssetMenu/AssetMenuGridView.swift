@@ -13,10 +13,10 @@ struct AssetMenuGridView: View {
         [.insurance,.creditCard,.cash,.realEstate]
     ]
     var body: some View {
-        VStack(spacing: 20 ){
+        VStack(spacing: 40 ){
             ForEach(menuList, id: \.self) { row in
                 //각각의 행을 가져오고
-                HStack(spacing: 10){
+                HStack(spacing: 40){
                     //가져온 각각의 행에서 아이템들을 뿌려준다.
                     ForEach(row) { menu in
                         Button("") {

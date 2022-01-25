@@ -8,27 +8,30 @@
 import SwiftUI
 
 struct NavigationBarWithButton: ViewModifier {
+    @State private var showModal = false
     var title: String = ""
     func body(content: Content) -> some View {
         return content
-            .navigationBarItems(leading: Text(title)
-                                    .font(.system(size: 24, weight: .bold))
-                                    .padding()
-                                , trailing: Button(action: {
-                                        print("자산 추가 Tapped")
-                                    }, label: {
-                                        Image(systemName: "plus")
-                                        Text("자산 추가")
-                                            .font(.system(size: 12))
-                                    }
-                                  )
-                                    .accentColor(.black)
-                                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10 ))
-                                    
-                                    .overlay(RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.black)
-                                            )
-                                )
+            .navigationBarItems(leading: Text(title).font(.system(size: 24, weight: .bold)).padding()
+                                , trailing:
+                Button(action: {
+                    self.showModal = true
+                }, label: {
+                    Image(systemName: "plus")
+                    Text("자산 추가")
+                        .font(.system(size: 12))
+                        
+                }
+                )
+                    .sheet(isPresented: self.$showModal){
+                        BankAccountView()
+                    }
+                    .accentColor(.black)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10 ))
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.black)
+                    )
+            )
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
                 let appearance = UINavigationBarAppearance()
@@ -41,6 +44,7 @@ struct NavigationBarWithButton: ViewModifier {
                 UINavigationBar.appearance()
                     .scrollEdgeAppearance = appearance
             }
+        
     }
     
     
