@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AssetMenuGridView: View {
+    @State var isShow = false
     let menuList: [[AssetMenu]] = [
         [.creditScore, .bankAccount,.investment,.loan],
         [.insurance,.creditCard,.cash,.realEstate]
@@ -19,10 +20,17 @@ struct AssetMenuGridView: View {
                 HStack(spacing: 40){
                     //가져온 각각의 행에서 아이템들을 뿌려준다.
                     ForEach(row) { menu in
-                        Button("") {
-                            print("\(menu.title) 버튼 tapped")
-                        }
-                        .buttonStyle(AssetMenuButtonStyle(menu: menu))
+                        
+                        Button(menu.id, action: {self.isShow = true })
+                            .buttonStyle(AssetMenuButtonStyle(menu: menu))
+                            .fullScreenCover(isPresented: self.$isShow,content: {
+                                BankAccountView()
+                            })
+                        
+//                        Button("") {
+//                            print("\(menu.title) 버튼 tapped")
+//                        }
+//                        .buttonStyle(AssetMenuButtonStyle(menu: menu))
                     }
                 }
             }

@@ -1,14 +1,14 @@
-# 제목 
-
-
-## 기능 상세
+# MyAssets
+자산관리 앱
 
 
 ## 활용기술 
 - SwiftUI 
-- 
+
 
 ## DEMO
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/51107183/150936799-1fac38f6-f06e-4e9b-a11f-92cc60722a82.gif)
 
 
 ## 배운 내용

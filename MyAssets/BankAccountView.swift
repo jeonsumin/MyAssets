@@ -23,6 +23,7 @@ struct BankAccountView: View {
                      .padding()
              })
              .accentColor(.white)
+             
          }
      }
 }
